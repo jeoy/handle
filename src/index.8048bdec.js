@@ -101,7 +101,7 @@ const gn = "modulepreload"
         }
     })
     , cn = "\u8BB0\u5206\u677F"
-    , xn = "寅虎年首届泛互联网桌游大赛"
+    , xn = "参加 寅虎年首届泛互联网桌游大赛"
     , bn = "\u63D0\u793A"
     , tn = "欢迎大家"
     , qn = "\u786E\u5B9A"
@@ -133,7 +133,7 @@ var Cn = {
     "example-4": "\u6B66\u8FD0\u660C\u9686",
     "failed-1": "\u4ECA\u5929\u4F60\u5DF2\u7ECF\u7528\u5B8C\u5341\u6B21\u7684\u5C1D\u8BD5\u673A\u4F1A\u4E86",
     "failed-2": "\u4F46\u662F\u6CA1\u5173\u7CFB\uFF0C\u4F60\u8FD8\u53EF\u4EE5\u7EE7\u7EED\u5C1D\u8BD5",
-    "failed-3": "",
+    "failed-3": "下次记得别迟到了",
     "games-count": "\u6E38\u620F\u6B21\u6570",
     "happy-new-year-2022": "\u864E\u5E74\u5FEB\u4E50\uFF01",
     hint: bn,
@@ -166,7 +166,7 @@ var Cn = {
     ok: qn,
     "other-variants": "\u5176\u4ED6\u4E2D\u6587 Wordle \u53D8\u4F53",
     pinyin: fn,
-    rule: '首先恭喜你按时到达',
+    rule: '不过 你居然还是迟到， 先热身吧',
     share: kn,
     "share-copied": "\u4EE5\u4E0B\u5185\u5BB9\u5DF2\u590D\u5236\u5230\u4F60\u7684\u526A\u8D34\u677F\uFF0C\u4F60\u53EF\u4EE5\u5728\u5176\u4ED6\u5E73\u53F0\u8D34\u4E0A\u8FDB\u884C\u5206\u4EAB",
     start: En,
@@ -92238,8 +92238,8 @@ const S = C(!1)
     ;
 const V = {
     value: {
-        word: '虎虎生威',
-        hint: '虎'
+        word: '鸿运当头',
+        hint: '头'
     }
 }, oo = c(() => V.value.hint)
     , Ni = c(() => T(V.value.word))
