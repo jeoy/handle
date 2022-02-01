@@ -92234,7 +92234,7 @@ const S = C(!1)
     ;
 const V = {
     value: {
-        word: '一见钟情',
+        word: '学富五车',
         hint: '虎'
     }
 }, oo = c(() => V.value.hint)
