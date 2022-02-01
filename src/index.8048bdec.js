@@ -118,10 +118,14 @@ var Cn = {
     "correct-answer": "\u6B63\u786E\u7B54\u6848",
     dashboard: cn,
     description: xn,
-    "dont-spoiler": "下面是开门密码: ",
+    "dont-spoiler-yes": "恭喜你，完成了热身挑战 ",
+    "dont-spoiler": "下面是开门密码线索: ",
     "dont-spoiler2": "1⃣️ (12, 5, 7, 15)  \u000b\u000b \u000b [3, 2]",
-    "dont-spoiler3": "2⃣️我是哪一年去的佛罗伦萨",
-    "dont-spoiler4": "3⃣️ 这里有多少个🏮",
+    "dont-spoiler3": "2⃣️ 我是哪一年去的佛罗伦萨",
+    "dont-spoiler4": "3⃣️ 小朋友 数一数 这里有多少个灯笼",
+    "dont-spoiler2-tip": "1⃣️ (12, 5, 7, 15)  \u000b\u000b \u000b [3, 2] ： （这是一个英文题）",
+    "dont-spoiler3-tip": "2⃣️ 我是哪一年去的佛罗伦萨  ： （在周围好好看看，好好看最后一个年份数字）",
+    "dont-spoiler4-tip": "3⃣️ 小朋友 数一数 这里有多少个灯笼 ： （中间的宫灯和绣球不算哦）",
     "download-as-image": "\u4E0B\u8F7D\u4E3A\u56FE\u7247",
     "example-1": "\u73ED\u95E8\u5F04\u65A7",
     "example-2": "\u4ED3\u9889\u9020\u5B57",
@@ -154,8 +158,8 @@ var Cn = {
     "intro-7": "\u7B2C\u4E00\u4E2A\u5B57",
     "intro-8": "\u4ED3",
     "intro-9": "\u4E3A\u6A59\u8272\uFF0C\u8868\u793A\u5176\u51FA\u73B0\u5728\u7B54\u6848\u4E2D\uFF0C\u4F46\u5E76\u4E0D\u662F\u7B2C\u4E00\u4E2A\u5B57\u3002",
-    "mask-off": "\u906E\u7F69\u5173\u95ED",
-    "mask-on": "恭喜你完成了热身活动",
+    "mask-off": "查看提示（先自己想想）",
+    "mask-on": "隐藏提示",
     name: tn,
     "next-note": "\u8DDD\u79BB\u4E0B\u4E00\u9898\u66F4\u65B0\u8FD8\u6709",
     "no-future-play": "Ops\uFF0C\u8FD9\u9053\u9898\u76EE\u6765\u81EA\u672A\u6765\uFF0C\u8FD8\u4E0D\u80FD\u73A9\u54E6\uFF01",
@@ -92234,7 +92238,7 @@ const S = C(!1)
     ;
 const V = {
     value: {
-        word: '锣鼓喧天',
+        word: '虎虎生威',
         hint: '虎'
     }
 }, oo = c(() => V.value.hint)
@@ -92802,8 +92806,11 @@ const Ao = {
     }
     , Ho = ["i"]
     , Ro = {
-    }
-    , Uo = i("div", {
+       
+    }, Bbbo = {
+        "text-xxl": "",
+    },
+    Uo = i("div", {
         "h-200": ""
     }, null, -1)
     , Ko = i("div", {
@@ -92878,12 +92885,12 @@ const Ao = {
                                         e(B, {
                                             key: 2
                                         }, [l(F), i("div", Wo, [i("button", {
-                                            class: x(n($) ? "text-primary" : "op500"),
+                                            class: x(n($) ? "text-primary" : "op50"),
                                             flex: "~ center gap-1",
                                             onClick: E[3] || (E[3] = f => $.value = !n($))
                                         }, [i("div", {
-
-                                        }, null, 8, Ho), b(" " + n(p)("mask-on"), 1)], 2)]), i("div", Ro, r(n(p)("dont-spoiler")), 1), i("div", Ro, r(n(p)("dont-spoiler2")), 1), i("div", Ro, r(n(p)("dont-spoiler3")), 1), i("div", Ro, r(n(p)("dont-spoiler4")), 1)], 64)) : (h(),
+                                            i: n($) ? "carbon-view-off" : "carbon-view"
+                                        }, null, 8, Ho), b(" " + r(n($) ? n(p)("mask-on") : n(p)("mask-off")), 1)], 2)]), i("div", Bbbo, r(n(p)("dont-spoiler-yes")), 1), i("div", Ro, r(n(p)("dont-spoiler")), 1), i("div", Ro, r(n(p)(n($) ? "dont-spoiler2-tip" : "dont-spoiler2")), 1), i("div", Ro, r(n(p)(n($) ? "dont-spoiler3-tip" : "dont-spoiler3")), 1), i("div", Ro, r(n(p)((n($) ? "dont-spoiler4-tip" : "dont-spoiler4"))), 1)], 64)) : (h(),
                                             e(B, {
                                                 key: 1
                                             }, [l(j, {
