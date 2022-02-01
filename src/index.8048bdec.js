@@ -92231,8 +92231,8 @@ const S = C(!1)
   ;
  const V = {
      value: {
-    word: '没有提示',
-    hint: ''
+    word: '虎跃新春',
+    hint: '虎虎虎'
 } } , oo = c(()=>V.value.hint)
   , Ni = c(()=>T(V.value.word))
   , di = c(()=>q.value.passed || A.value.length && Yn(ci(T(A.value[A.value.length - 1]))))
